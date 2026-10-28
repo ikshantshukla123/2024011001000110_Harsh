@@ -1,0 +1,9 @@
+.env
+*.key
+.cosign-password
+__pycache__/
+*.py[cod]
+.DS_Store
+*.pdf
+reports/*.sarif
+trivy-cache/

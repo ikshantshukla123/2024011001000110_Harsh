@@ -18,14 +18,14 @@ services:
       - backend-db
 
   backend:
-    build: ./backend
+    image: localhost:5005/harshmishra_2024011001000110/fest-backend:1.0.0
     environment:
       REGNO: "2024011001000110"
       DB_HOST: db
       DB_NAME: festpass
       DB_USER: festpass
       DB_PASSWORD: ${DB_PASSWORD}
-      APP_VERSION: "dev"
+      APP_VERSION: "1.0.0"
     depends_on:
       db:
         condition: service_healthy
